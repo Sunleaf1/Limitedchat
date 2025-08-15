@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+#posts img, .story img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.story {
+  display: inline-block;
+  cursor: pointer;
+}
