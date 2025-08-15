@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Web App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/supabase.min.js"></script>
+</head>
+<body>
+  <div id="auth">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="login()">Log In</button>
+  </div>
+
+  <div id="app" style="display:none">
+    <button onclick="logout()">Log Out</button>
+    <input type="file" id="fileInput">
+    <button onclick="uploadPost()">Post</button>
+    <button onclick="uploadStory()">Story</button>
+
+    <h2>Stories</h2>
+    <div id="stories-container"></div>
+
+    <h2>Posts</h2>
+    <div id="posts"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
